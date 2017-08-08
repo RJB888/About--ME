@@ -25,3 +25,12 @@ if (secondQuestion.toUpperCase() === 'N' ) {
 else {
   alert('No, you are big time wrong... that\'s why you shouldn\'t skip Geography class');
 }
+
+// Guessing question # 3
+var thirdQuestion = prompt('Do you think that Abdullah is a freaking robot');
+if (thirdQuestion.toUpperCase() === 'Y' ) {
+  alert('I wonder why would you say that?!!');
+}
+else {
+  alert('You\'re Damn right, I live and breath just like any human on mother Earth :/');
+}
