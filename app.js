@@ -1,6 +1,6 @@
 'use strict';
 // a confirm question will pop out
-// var correct = 0;
+ var correct = 0;
 // var confirmed = confirm('This page is a LIE...Welcome to my About--me page; CLick ok to continue');
 // if (confirmed) {
 //   alert('Alrighty, let\'s do it');
@@ -68,28 +68,49 @@
 // }
 // Guessing question # 6
 alert('for this next question you have 4 tries total to get the right answer!');
-
-for (var i = 0 ; i < 4 ; i++) {
+for (var i = 3 ; i > 0 ; i--) {
   var sixthAnswer = prompt('Can you guess how many languages I speak?');
   console.log(sixthAnswer);
   if(sixthAnswer === '' || sixthAnswer === null) {
-    alert('Invalid answer, try again');
+    alert('Invalid answer, try again. You have ' + i + ' tries left!');
   }
   else if ( sixthAnswer > 3) {
-    alert('You guessed too high, try again!');
+    alert('You guessed too high, try again! ' + i + ' tries left!');
 
   }
   else if (sixthAnswer < 3 ) {
-    alert('You guessed too low, try again!');
+    alert('You guessed too low, try again! ' + i + ' tries left!');
   }
   else {
     alert('That\'s right; Arabic, Somali, and English ');
     correct ++;
     break;
+
   }
 
 }
+// Guessing question # 7
+for (var i = 3 ; i > 0; i--) {
+  var countriesIVisited = ['SYRIA', 'USA', 'CANADA','HANGARIA','TURKEY','UAE', 'SOMALIA'];
+  var seventhAnswer = prompt('Where I lived?').toUpperCase();
+  if(sixthAnswer === '' || sixthAnswer === null) {
+    alert('Invalid answer, try again. You have ' + i + ' tries left!');
+  }
+  else if ( countriesIVisited = seventhAnswer) {
+    alert ('great!');
+    break;
+  }
+  else {
+    alert('Try again! ');
+  }
+  // if ( countriesIVisited === seventhAnswer){
+  //   alert('you are correct!');
+  // }
+  // else {
+  //   alert(seventhAnswer);
+  // }
 
+}
 //When done print all answers of the use on the bottom and alert them to look at it
 alert('Thanks for playing the guess game, at the bottom of the page you should see the your score!');
 // document.write(firstAnswer);
