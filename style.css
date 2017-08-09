@@ -14,7 +14,7 @@ img:hover {
 }
 header {
   text-align: center;
-  
+
 }
 .tag {
   background-color: #efefef;
@@ -23,4 +23,21 @@ header {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
+}
+.red {
+  color: red;
+}
+.block {
+
+  width: 400px;
+  margin: 40px 40px 40px;
+  padding: 10px auto;
+  text-align: left;
+  border-bottom: 5px solid black;
+}
+.block:hover{
+  border-color:purple;
+}
+.para {
+  font-size: .75em;
 }
