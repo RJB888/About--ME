@@ -66,6 +66,10 @@ if (fifthAnswer.toUpperCase() === 'Y' ) {
 else {
   alert('Too early to agree with you on this one');
 }
+// Guessing question # 6
+alert('for this next question you have 4 tries total to get the right answer!');
+var sixthAnswer = prompt('Can you guess how many languages I speak?');
+console.log(sixthAnswer);
 
 //When done print all answers of the use on the bottom and alert them to look at it
 alert('Thanks for playing the guess game, at the bottom of the page you should see the your score!');
