@@ -47,7 +47,8 @@ else{
   alert('You DIDN\t Floww the rules');
 }
 // Guessing question # 4
-var fourthAnswer = prompt('Do I have an alien twein that lives in Jupiter by him self?');
+var fourthAnswer = prompt('Do I have an alien twin that lives in Jupiter by him self?');
+console.log(fourthAnswer);
 if (fourthAnswer.toUpperCase() === 'Y' ) {
   alert('In your dreams sucka!');
 }
@@ -57,6 +58,7 @@ else if (secondAnswer.toUpperCase() === 'N' || secondAnswer.toUpperCase() === 'N
 }
 // Guessing question # 5
 var fifthAnswer = prompt('Do I like coding?');
+console.log(fifthAnswer);
 if (fifthAnswer.toUpperCase() === 'Y' ) {
   alert('Yeah I think so too');
   correct ++;
@@ -71,4 +73,5 @@ document.write(firstAnswer);
 document.write(secondAnswer);
 document.write(thirdAnswer);
 document.write(fourthAnswer);
+document.write(fifthAnswer);
 document.write('Your Score: ' + correct + '/5 !' );
