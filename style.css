@@ -66,3 +66,7 @@ header {
 a:hover {
     color: hotpink;
 }
+/* it keeps contents float around the div with float to stay away from it
+.clearfix {
+  clear: both
+} */

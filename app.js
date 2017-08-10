@@ -91,12 +91,13 @@ for (var i = 3 ; i > 0 ; i--) {
 
 }
 // Guessing question # 7
+
 for (var i = 7 ; i > 0; i--) {
-  var countriesIVisited = ['SYRIA', 'USA', 'CANADA','HUNGARY','UAE', 'SOMALIA'];
+  var countriesIVisited = ['SYRIA ', 'USA ', 'CANADA ','HUNGARY ','UAE ', 'SOMALIA '];
   var seventhAnswer = prompt('Where I lived?').toUpperCase();
   console.log(seventhAnswer);
   if (seventhAnswer === countriesIVisited[0] || seventhAnswer === countriesIVisited[1] || seventhAnswer === countriesIVisited[2] || seventhAnswer === countriesIVisited[3] || seventhAnswer === countriesIVisited[4] || seventhAnswer === countriesIVisited[5]) {
-    alert('Wow that\'s right');
+    alert('Wow that\'s right places where I lived are: ' + countriesIVisited);
     correct++;
     break;
   }
