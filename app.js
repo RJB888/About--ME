@@ -1,6 +1,6 @@
 'use strict';
 // a confirm question will pop out
- var correct = 0;
+var correct = 0;
 // var confirmed = confirm('This page is a LIE...Welcome to my About--me page; CLick ok to continue');
 // if (confirmed) {
 //   alert('Alrighty, let\'s do it');
@@ -91,18 +91,26 @@ for (var i = 3 ; i > 0 ; i--) {
 }
 // Guessing question # 7
 for (var i = 3 ; i > 0; i--) {
-  var countriesIVisited = ['SYRIA', 'USA', 'CANADA','HANGARIA','TURKEY','UAE', 'SOMALIA'];
+  var countriesIVisited = ['SYRIA', 'USA', 'CANADA','HANGARIA','UAE', 'SOMALIA'];
   var seventhAnswer = prompt('Where I lived?').toUpperCase();
-  if(sixthAnswer === '' || sixthAnswer === null) {
-    alert('Invalid answer, try again. You have ' + i + ' tries left!');
-  }
-  else if ( countriesIVisited = seventhAnswer) {
-    alert ('great!');
+  if (seventhAnswer === countriesIVisited[0] || seventhAnswer === countriesIVisited[1] || seventhAnswer === countriesIVisited[2] || seventhAnswer === countriesIVisited[3] || seventhAnswer === countriesIVisited[4] || seventhAnswer === countriesIVisited[5]) {
+    alert('Wow that\'s right');
+    correct++;
     break;
   }
   else {
-    alert('Try again! ');
+    alert('worng try again');
   }
+  // if(sixthAnswer === '' || sixthAnswer === null) {
+  //   alert('Invalid answer, try again. You have ' + i + ' tries left!');
+  // }
+  // else if ( countriesIVisited = seventhAnswer) {
+  //   alert ('great!');
+  //   break;
+  // }
+  // else {
+  //   alert('Try again! ');
+  // }
   // if ( countriesIVisited === seventhAnswer){
   //   alert('you are correct!');
   // }
