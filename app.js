@@ -91,6 +91,10 @@ for (var i = 3 ; i > 0 ; i--) {
 
 }
 // Guessing question # 7
+/*   consider looking into this var changeArrayToString = countriesIVisited.join(', ');
+  var seventhAnswer = prompt('Where I lived?').toUpperCase();
+  console.log(seventhAnswer);
+if (countriesIVisited.includes(seventhAnswer().toUpperCase()))*/
 
 for (var i = 7 ; i > 0; i--) {
   var countriesIVisited = ['SYRIA ', 'USA ', 'CANADA ','HUNGARY ','UAE ', 'SOMALIA '];
