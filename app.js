@@ -1,14 +1,15 @@
 'use strict';
 // a confirm question will pop out
 var correct = 0;
-var confirmed = confirm('This page is a LIE...Welcome to my About--me page; CLick ok to continue');
+var playerName = prompt('Please type your name in the box');
+var confirmed = confirm('This page is a LIE...Welcome ' + playerName + ' to my About--me page; CLick ok to continue');
 if (confirmed) {
   alert('Alrighty, let\'s do it');
 }
 else {
   alert('We are starting anywayz');
 }
-alert('To answers the questions, please type y for Yes, and n for No');
+alert('To answers the questions, please type y or Yes, and n or No');
 // Guessing question # 1
 var firstAnswer = prompt('Do you think that I have a chimpanzee as a pet?');
 console.log(firstAnswer);
@@ -26,7 +27,7 @@ else {
 // Guessing question # 2
 var secondAnswer = prompt('Is the country of Somalia located in the Asian contenet between China and Russia?');
 console.log(secondAnswer);
-if (secondAnswer.toUpperCase() === 'N' ) {
+if (secondAnswer.toUpperCase() === 'N'||msecondAnswer.toUpperCase() === 'NO' ) {
   alert('Awesome, looks like you did\'t skip thier Geography class!');
   correct ++ ;
 }
@@ -37,7 +38,7 @@ else {
 // Guessing question # 3
 var thirdAnswer = prompt('Do you think that Abdullah is a freaking robot');
 console.log(thirdAnswer);
-if (thirdAnswer.toUpperCase() === 'Y' ) {
+if (thirdAnswer.toUpperCase() === 'Y'|| thirdAnswer.toUpperCase() === 'YES' ) {
   alert('I wonder why would you say that?!!');
 }
 else if (secondAnswer.toUpperCase() === 'N' || secondAnswer.toUpperCase() === 'NO'){
@@ -49,7 +50,7 @@ else{
 // Guessing question # 4
 var fourthAnswer = prompt('Do I have an alien twin that lives in Jupiter by him self?');
 console.log(fourthAnswer);
-if (fourthAnswer.toUpperCase() === 'Y' ) {
+if (fourthAnswer.toUpperCase() === 'Y'|| fourthAnswer.toUpperCase() === 'YES' ) {
   alert('In your dreams sucka!');
 }
 else if (secondAnswer.toUpperCase() === 'N' || secondAnswer.toUpperCase() === 'NO') {
@@ -59,7 +60,7 @@ else if (secondAnswer.toUpperCase() === 'N' || secondAnswer.toUpperCase() === 'N
 // Guessing question # 5
 var fifthAnswer = prompt('Do I like coding?');
 console.log(fifthAnswer);
-if (fifthAnswer.toUpperCase() === 'Y' ) {
+if (fifthAnswer.toUpperCase() === 'Y' || fifthAnswer.toUpperCase() === 'YES' ) {
   alert('Yeah I think so too');
   correct ++;
 }
@@ -106,4 +107,4 @@ for (var i = 3 ; i > 0; i--) {
 //When done print all answers of the use on the bottom and alert them to look at it
 alert('Thanks for playing the guess game, at the bottom of the page you should see the your score!');
 
-document.write('Your Score: ' + correct + '/7 ! ' );
+document.write(playerName + ' Your Scored: ' + correct + ' out of 7 ! ' );
