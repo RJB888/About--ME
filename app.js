@@ -27,7 +27,7 @@ else {
 // Guessing question # 2
 var secondAnswer = prompt('Is the country of Somalia located in the Asian contenet between China and Russia?');
 console.log(secondAnswer);
-if (secondAnswer.toUpperCase() === 'N'||msecondAnswer.toUpperCase() === 'NO' ) {
+if (secondAnswer.toUpperCase() === 'N' || secondAnswer.toUpperCase() === 'NO' ) {
   alert('Awesome, looks like you did\'t skip thier Geography class!');
   correct ++ ;
 }
@@ -38,7 +38,7 @@ else {
 // Guessing question # 3
 var thirdAnswer = prompt('Do you think that Abdullah is a freaking robot');
 console.log(thirdAnswer);
-if (thirdAnswer.toUpperCase() === 'Y'|| thirdAnswer.toUpperCase() === 'YES' ) {
+if (thirdAnswer.toUpperCase() === 'Y' || thirdAnswer.toUpperCase() === 'YES' ) {
   alert('I wonder why would you say that?!!');
 }
 else if (secondAnswer.toUpperCase() === 'N' || secondAnswer.toUpperCase() === 'NO'){
@@ -50,7 +50,7 @@ else{
 // Guessing question # 4
 var fourthAnswer = prompt('Do I have an alien twin that lives in Jupiter by him self?');
 console.log(fourthAnswer);
-if (fourthAnswer.toUpperCase() === 'Y'|| fourthAnswer.toUpperCase() === 'YES' ) {
+if (fourthAnswer.toUpperCase() === 'Y' || fourthAnswer.toUpperCase() === 'YES' ) {
   alert('In your dreams sucka!');
 }
 else if (secondAnswer.toUpperCase() === 'N' || secondAnswer.toUpperCase() === 'NO') {
@@ -91,9 +91,10 @@ for (var i = 3 ; i > 0 ; i--) {
 
 }
 // Guessing question # 7
-for (var i = 3 ; i > 0; i--) {
+for (var i = 7 ; i > 0; i--) {
   var countriesIVisited = ['SYRIA', 'USA', 'CANADA','HUNGARY','UAE', 'SOMALIA'];
   var seventhAnswer = prompt('Where I lived?').toUpperCase();
+  console.log(seventhAnswer);
   if (seventhAnswer === countriesIVisited[0] || seventhAnswer === countriesIVisited[1] || seventhAnswer === countriesIVisited[2] || seventhAnswer === countriesIVisited[3] || seventhAnswer === countriesIVisited[4] || seventhAnswer === countriesIVisited[5]) {
     alert('Wow that\'s right');
     correct++;
