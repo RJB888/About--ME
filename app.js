@@ -105,9 +105,5 @@ for (var i = 3 ; i > 0; i--) {
 }
 //When done print all answers of the use on the bottom and alert them to look at it
 alert('Thanks for playing the guess game, at the bottom of the page you should see the your score!');
-document.write(firstAnswer);
-document.write(secondAnswer);
-document.write(thirdAnswer);
-document.write(fourthAnswer);
-document.write(fifthAnswer);
-document.write('Your Score: ' + correct + '/7 !' );
+
+document.write('Your Score: ' + correct + '/7 ! ' );
